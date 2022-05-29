@@ -1,10 +1,10 @@
 {
   "name": "raumer",
-  "description": "An Aurelia client application.",
+  "description": "An Off-Time TTRPG Sci-Fi Game",
   "version": "0.1.0",
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "git",
+    "url": "https://github.com/Jan-Ka/raumer.git"
   },
   "license": "MIT",
   "dependencies": {
