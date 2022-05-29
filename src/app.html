@@ -1,5 +1,7 @@
 <template>
   <require from="./app.scss"></require>
+  <require from="./resources/elements/event-list"></require>
+
   <section class="section">
     <div class="container">
       <h1 class="title">
@@ -8,6 +10,9 @@
       <p class="subtitle">
         ${subtitle} <i class="fa-brands fa-accessible-icon"></i>
       </p>
+      <div>
+        <event-list></event-list>
+      </div>
     </div>
   </section>
 </template>

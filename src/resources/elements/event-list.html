@@ -1,0 +1,7 @@
+<template>
+  <require from="./event-card"></require>
+  <div class="event-list">
+    <h2>${events_count}</h2>
+    <event-card repeat.for="event of events" event.bind="event"></event-card>
+  </div>
+</template>

@@ -1,0 +1,30 @@
+<template>
+  <require from="./event-card.scss"></require>
+  <div if.bind="event">
+    <div class="card">
+      <header class="card-header">
+        <div class="card-header-title">${event.title}</div>
+        <div class="card-header-icon">
+          <i class="fa-solid fa-person-through-window"></i>
+        </div>
+      </header>
+      <div class="card-content">
+        <p>${event.body}</p>
+      </div>
+      <footer class="card-footer buttons is-flex is-flex-direction-column m-3">
+        <a href="#" class="button is-warning"><span>Leave</span></a>
+        <a href="#" class="button is-success"><span>Refuse to Elaborate</span></a>
+        <a href="#" class="button is-static is-multiline">
+          <span>Profit</span>
+          <span><small>(Missing ???)</small></span>
+        </a>
+        <a href="#" class="button is-danger">
+          <span>Both</span>
+          <span class="icon is-small">
+            <i class="fa-solid fa-person-through-window"></i>
+          </span>
+        </a>
+      </footer>
+    </div>
+  </div>
+</template>
