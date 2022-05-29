@@ -16,6 +16,7 @@ const when = (condition, config, negativeConfig) =>
 // primary config:
 const outDir = path.resolve(__dirname, project.platform.output);
 const srcDir = path.resolve(__dirname, 'src');
+const title = "raumer"
 const baseUrl = '/';
 
 const cssRules = [
@@ -249,6 +250,7 @@ module.exports = ({ production }, { analyze, hmr, port, host }) => ({
       template: 'index.ejs',
       metadata: {
         // available in index.ejs //
+        title,
         baseUrl
       }
     }),
