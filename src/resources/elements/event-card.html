@@ -4,7 +4,7 @@
     <header class="card-header">
       <div class="card-header-title is-centered">${event.title}</div>
       <div class="card-header-icon">
-        <i class="fa-solid fa-person-through-window"></i>
+        <i class.bind="getIconClassForEventType(event.type)"></i>
       </div>
     </header>
     <div class="card-content">
