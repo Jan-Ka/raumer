@@ -19,7 +19,11 @@
 		"EditorConfig.EditorConfig",
 		"ecmel.vscode-html-css",
 		"yzhang.markdown-all-in-one",
-		"esbenp.prettier-vscode"
+		"esbenp.prettier-vscode",
+		"redhat.vscode-yaml",
+		"foxundermoon.shell-format",
+		"AureliaEffect.aurelia",
+		"ms-azuretools.vscode-docker"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
