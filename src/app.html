@@ -1,18 +1,11 @@
 <template>
   <require from="./app.scss"></require>
   <require from="./resources/elements/event-list"></require>
-
+  <require from="./resources/elements/navbar"></require>
+  <navbar></navbar>
   <section class="section">
     <div class="container">
-      <h1 class="title">
-        ${message}
-      </h1>
-      <p class="subtitle">
-        ${subtitle} <i class="fa-brands fa-accessible-icon"></i>
-      </p>
-      <div>
-        <event-list></event-list>
-      </div>
+      <event-list></event-list>
     </div>
   </section>
 </template>
