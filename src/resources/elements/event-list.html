@@ -3,6 +3,6 @@
   <require from="./event-list.scss"></require>
   <div class="event-list">
     <h2>${events_count}</h2>
-    <event-card class="mb-3" repeat.for="event of events" event.bind="event"></event-card>
+    <event-card data-uuid.bind="item.event.id" class="mb-3" repeat.for="item of events" event.bind="item.event" collapsed.bind="item.collapsed"></event-card>
   </div>
 </template>

@@ -3,6 +3,7 @@ import { ACTION_TYPE, EVENT_TYPE, RaumerEvent } from 'event';
 
 export class EventCard {
   @bindable event: RaumerEvent;
+  @bindable collapsed: boolean;
 
   public getIconClassForEventType(type: EVENT_TYPE, base: string) {
     let extraClass = "";
@@ -35,5 +36,9 @@ export class EventCard {
     }
 
     return [base, extraClass].join(" ");
+  }
+
+  public onTitleClickDelegate() {
+    this.collapsed = !this.collapsed;
   }
 }

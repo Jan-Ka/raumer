@@ -2,15 +2,15 @@
   <require from="./event-card.scss"></require>
   <div class="card" if.bind="event">
     <header class="card-header">
-      <div class="card-header-title is-centered">${event.title}</div>
+      <a class="card-header-title is-centered" click.delegate="onTitleClickDelegate()">${event.title}</a>
       <div class="card-header-icon">
         <i class.bind="getIconClassForEventType(event.type)"></i>
       </div>
     </header>
-    <div class="card-content">
+    <div class="card-content" show.bind="!collapsed">
       <p>${event.body}</p>
     </div>
-    <footer class="card-footer" if.bind="event.actions">
+    <footer class="card-footer" if.bind="event.actions" show.bind="!collapsed">
       <div class="buttons are-small">
         <button repeat.for="action of event.actions"
           class.bind="getButtonClassForActionType(action.type, 'button is-outlined is-fullwidth')">${action.title}</button>

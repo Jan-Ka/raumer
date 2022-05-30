@@ -1,7 +1,8 @@
 import { ACTION_TYPE, EVENT_TYPE, RaumerAction, RaumerEvent } from "event";
 
 export class EventsService {
-  public async getAll() {
+
+  public async getAll(): Promise<RaumerEvent[]> {
     const events = [];
 
     for (let i = 0; i < this.getRandomIntInclusive(3, 6); i++) {
